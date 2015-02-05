@@ -1,0 +1,6 @@
+[
+	{ "keys": ["ctrl+alt+super+left"], "command": "find_specified_prev", "args": { "findtext": "((?<=\")\")|((?<=')')|((?<=:);)|((?<=\\})\\{)|((?<=\\()\\))|((?<=\\{)(\\w|\\s))", "findlabel":"prev blank surrounding characters" } },
+	{ "keys": ["ctrl+alt+super+right"], "command": "find_specified_next", "args": { "findtext": "(\"(?=\"))|('(?='))|(:(?=;))|(\\{(?=\\}))|(\\((?=\\)))|(.(?=\\}[,; ]* *$))", "findlabel":"next blank surrounding characters" } },
+	{ "keys" : ["alt+super+left"], "command": "find_specified_prev", "args": { "findtext": "(?<!\\?)(?<=[ (,'\".!<])?[a-zA-Z0-9_\\$\\-]{2,}(\\->)?[a-zA-Z_\\$]{1,}(\\(\\))*(?=[ ,()'\".;>])|(?<=')(?=')|(?<=\\()(?=\\))", "findlabel":"prev word" } },
+	{ "keys" : ["alt+super+right"], "command": "find_specified_next", "args": { "findtext": "(?<!\\?)(?<=[ (,'\".!<])?[a-zA-Z0-9_\\$\\-]{2,}(\\->)?[a-zA-Z_\\$]{1,}(\\(\\))*(?=[ ,()'\".;>])|(?<=')(?=')|(?<=\\()(?=\\))|(?<=\\{)(?=\\})", "findlabel":"next word" } }
+]
